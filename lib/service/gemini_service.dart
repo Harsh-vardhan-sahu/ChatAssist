@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 class GeminiService {
   static final String _apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
-  static const String _model = "gemini-1.5-flash";
+  static const String _model = "gemini-1.5-pro";
 
   static Future<String> sendMessage(String prompt) async {
     final url = Uri.parse(
